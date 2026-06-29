@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patel Restaurant</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍽 Patel Restaurant</h1>
+
+    <div class="top-right">
+        <button onclick="showTables()">Select Table</button>
+
+        <select id="table" onchange="tableSelected()" style="display:none;">
+            <option>Select Table</option>
+            <option>Table 1</option>
+            <option>Table 2</option>
+            <option>Table 3</option>
+            <option>Table 4</option>
+            <option>Table 5</option>
+            <option>Table 6</option>
+            <option>Table 7</option>
+            <option>Table 8</option>
+            <option>Table 9</option>
+            <option>Table 10</option>
+        </select>
+
+        <p id="tableName"></p>
+    </div>
+</header>
+
+<h2 class="heading">Our Menu</h2>
+
+<div class="menu">
+
+<div class="card">
+<div class="icon">🍛</div>
+<h3>Paneer Masala</h3>
+<p>₹220</p>
+<button onclick="addToCart('Paneer Masala',220)">Add to Cart</button>
+</div>
+
+<div class="card">
+<div class="icon">🥘</div>
+<h3>Kaju Masala</h3>
+<p>₹350</p>
+<button onclick="addToCart('Kaju Masala',350)">Add to Cart</button>
+</div>
+
+<div class="card">
+<div class="icon">🍕</div>
+<h3>Margherita Pizza</h3>
+<p>₹300</p>
+<button onclick="addToCart('Margherita Pizza',300)">Add to Cart</button>
+</div>
+
+<div class="card">
+<div class="icon">🍕</div>
+<h3>Paneer Thin Crust</h3>
+<p>₹320</p>
+<button onclick="addToCart('Paneer Thin Crust',320)">Add to Cart</button>
+</div>
+
+<div class="card">
+<div class="icon">🌽🍕</div>
+<h3>Golden Corn Pizza</h3>
+<p>₹430</p>
+<button onclick="addToCart('Golden Corn Pizza',430)">Add to Cart</button>
+</div>
+
+<div class="card">
+<div class="icon">🥗🍕</div>
+<h3>Veggie Loaded Pizza</h3>
+<p>₹450</p>
+<button onclick="addToCart('Veggie Loaded Pizza',450)">Add to Cart</button>
+</div>
+
+<div class="card">
+<div class="icon">🔥🍕</div>
+<h3>Smoky BBQ Paneer Pizza</h3>
+<p>₹400</p>
+<button onclick="addToCart('Smoky BBQ Paneer Pizza',400)">Add to Cart</button>
+</div>
+
+</div>
+
+<div class="cart">
+<h2>Your Cart</h2>
+<ul id="cartList"></ul>
+<h3>Total: ₹<span id="total">0</span></h3>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
